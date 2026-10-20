@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Our Special Day 💖</title>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="bubbles"></div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<linearGradient id="pf" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#eaf6ff"/><stop offset="1" stop-color="#6db4ff"/></linearGradient>
+<linearGradient id="pb" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#b8dcff"/><stop offset="1" stop-color="#3f7fe0"/></linearGradient>
+<path id="pt" d="M60 82C42 66 42 40 60 12C78 40 78 66 60 82Z" stroke="#fff" stroke-opacity=".75" stroke-width="1"/>
+<symbol id="lily" viewBox="0 0 120 110">
+<ellipse cx="60" cy="90" rx="58" ry="17" fill="#27a08f"/><ellipse cx="60" cy="88" rx="44" ry="11" fill="#33b8a3" opacity=".6"/>
+<g fill="url(#pb)"><use href="#pt" transform="rotate(-66 60 82)"/><use href="#pt" transform="rotate(66 60 82)"/><use href="#pt" transform="rotate(-40 60 82)"/><use href="#pt" transform="rotate(40 60 82)"/></g>
+<g fill="url(#pf)"><use href="#pt" transform="rotate(-18 60 82)"/><use href="#pt" transform="rotate(18 60 82)"/><use href="#pt"/></g>
+<circle cx="60" cy="66" r="4" fill="#ffd966"/>
+</symbol></defs></svg>
+<div id="lilies" aria-hidden="true">
+<svg class="lil" style="left:-4%;bottom:-3%;width:clamp(110px,24vw,230px)"><use href="#lily"/></svg>
+<svg class="lil" style="left:22%;bottom:-5%;width:clamp(80px,15vw,150px);animation-delay:-2s"><use href="#lily"/></svg>
+<svg class="lil" style="right:-3%;bottom:-2%;width:clamp(110px,25vw,240px);animation-delay:-4s"><use href="#lily"/></svg>
+<svg class="lil" style="right:24%;bottom:-4%;width:clamp(70px,13vw,130px);animation-delay:-1s"><use href="#lily"/></svg>
+<svg class="lil f" style="left:-5%;top:30%;width:clamp(70px,14vw,140px);rotate:-18deg;animation-delay:-3s"><use href="#lily"/></svg>
+<svg class="lil f" style="right:-4%;top:20%;width:clamp(70px,15vw,150px);rotate:16deg;animation-delay:-5s"><use href="#lily"/></svg>
+<svg class="lil f" style="left:10%;top:5%;width:clamp(50px,9vw,100px);rotate:-8deg;animation-delay:-2s"><use href="#lily"/></svg>
+<svg class="lil f" style="right:12%;top:6%;width:clamp(50px,9vw,100px);rotate:10deg;animation-delay:-4s"><use href="#lily"/></svg>
+</div>
+<svg class="seawave" viewBox="0 0 1200 70" preserveAspectRatio="none"><path d="M0 35 Q150 0 300 35 T600 35 T900 35 T1200 35 V70 H0Z" fill="#fff"/></svg>
+<button id="mute" aria-label="Matikan atau nyalakan musik">🔊</button>
+
+<!-- Tahap 1 -->
+<section class="stage on" id="s1">
+  <svg id="chibi" class="wave" viewBox="0 0 200 230" aria-label="Karakter chibi">
+    <g id="balloon"><line x1="170" y1="70" x2="150" y2="150" stroke="#fff" stroke-width="2"/><path d="M170 72c-26-24-34-4-20 12 8 9 20 18 20 18s12-9 20-18c14-16 6-36-20-12z" transform="translate(0,-26)" fill="#ff6f9c"/></g>
+    <rect x="62" y="150" width="76" height="62" rx="26" fill="#ff8fb3"/>
+    <rect x="76" y="206" width="16" height="18" rx="7" fill="#ffe3d0"/><rect x="108" y="206" width="16" height="18" rx="7" fill="#ffe3d0"/>
+    <circle cx="60" cy="168" r="9" fill="#ffe3d0"/>
+    <g id="arm"><rect x="136" y="144" width="30" height="14" rx="7" fill="#ff8fb3"/><circle cx="168" cy="151" r="9" fill="#ffe3d0"/></g>
+    <circle cx="48" cy="52" r="20" fill="#4b2e3a"/><circle cx="152" cy="52" r="20" fill="#4b2e3a"/>
+    <circle cx="100" cy="98" r="62" fill="#ffe3d0"/>
+    <path d="M38 94c0-46 30-62 62-62s62 16 62 62c-14-26-34-34-62-34s-48 8-62 34z" fill="#4b2e3a"/>
+    <circle class="cheek" cx="64" cy="112" r="10"/><circle class="cheek" cx="136" cy="112" r="10"/>
+    <g class="eN"><circle cx="76" cy="98" r="8" fill="#3a2230"/><circle cx="124" cy="98" r="8" fill="#3a2230"/><circle cx="79" cy="95" r="2.8" fill="#fff"/><circle cx="127" cy="95" r="2.8" fill="#fff"/></g>
+    <g class="eJ"><path d="M66 100q10-14 20 0M114 100q10-14 20 0" stroke="#3a2230" stroke-width="4" fill="none" stroke-linecap="round"/></g>
+    <g class="brow" stroke="#3a2230" stroke-width="3.5" stroke-linecap="round"><path d="M66 82l18 4M134 82l-18 4"/></g>
+    <path class="tear" d="M130 112c-5 8-5 12 0 12s5-4 0-12z" fill="#7fd2ff"/>
+    <path class="m m-smile" d="M88 120q12 12 24 0" stroke="#c4496e" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <ellipse class="m m-o" cx="100" cy="122" rx="6" ry="7" fill="#c4496e"/>
+    <path class="m m-sad" d="M88 128q12-12 24 0" stroke="#c4496e" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <path class="m m-open" d="M86 116q14 24 28 0z" fill="#c4496e"/>
+  </svg>
+  <h1>Halo Bee Kesayangku...</h1>
+  <p class="sub">Ada seseorang yang ulang tahun hari ini lho! 🎉</p>
+  <button class="btn" id="open">Buka Kejutan 💌</button>
+</section>
+
+<!-- Tahap 2 -->
+<section class="stage" id="s2">
+  <div id="mini"></div>
+  <h2 id="q">Kamu sayang kan sama aku?</h2>
+  <div id="choices">
+    <button class="btn" id="yes">Sayang banget! 💕</button>
+    <button class="btn alt" id="no">Enggak</button>
+  </div>
+  <div id="hint"></div>
+</section>
+
+<!-- Level game -->
+<section class="stage" id="sg">
+  <h2>Jarak Kita 🌍</h2>
+  <p class="sub" style="max-width:40ch">Tekan dan tahan tombol, biar kita saling mendekat 💞</p>
+  <div class="track"><div id="ln"></div>
+    <div class="pawn" id="pa"><b id="pi1"></b><small id="pn1"></small></div>
+    <div class="pawn" id="pz"><b id="pi2"></b><small id="pn2"></small></div>
+    <div id="mh">💗</div></div>
+  <div id="km" class="big" style="font-size:1.6rem"></div>
+  <div class="prog"><div id="bar"></div></div>
+  <p class="sub" id="dm" style="min-height:2.6em"></p>
+  <button class="btn" id="near">Dekati 💞</button>
+  <button class="btn" id="nx" style="display:none">Lanjut ke surat 💌</button>
+  <button class="btn alt" id="skip">Lewati ➜</button>
+</section>
+
+<!-- Tahap 3 -->
+<section class="stage" id="s3">
+  <h2 id="t3">Pesan rahasia untukmu 💌</h2>
+  <div class="env" id="env"><div class="flap"></div><div class="seal">💖</div></div>
+  <form id="pass" onsubmit="return false"><input id="pin" type="password" inputmode="numeric" placeholder="Passcode" autocomplete="off" aria-label="Passcode"><button class="btn" id="unlock" type="button">Buka</button></form>
+  <p class="sub" id="phint"></p>
+  <div id="letter"></div>
+  <button class="btn" id="toGal" style="display:none">Lihat kenangan kita 📸</button>
+</section>
+
+<!-- Tahap 4 -->
+<section class="stage" id="s4">
+  <h2>Mekarkan Lily 🪷</h2>
+  <p class="sub">Ketuk kuncup lily untuk membuka kenangannya</p>
+  <div id="pond"><div id="grid"></div></div>
+  <p class="sub" id="bc"></p>
+  <button class="btn" id="toFin" style="display:none">Satu hal lagi... 🎂</button>
+</section>
+<div id="bm"><div class="mc"><div class="face"><div class="ph" id="bph"></div><div class="lb" id="blb"></div></div></div><p class="big" id="bcap"></p><button class="btn alt" id="bx">Tutup</button></div>
+
+<!-- Tiup lilin -->
+<section class="stage" id="sc">
+  <h2>Buat permohonan 🎂</h2>
+  <p class="sub" style="max-width:34ch">Pejamkan mata, buat satu permohonan, lalu tiup lilinnya!</p>
+  <svg id="cake" viewBox="0 0 240 200" aria-label="Kue ulang tahun">
+    <ellipse cx="120" cy="180" rx="108" ry="15" fill="#e8f6ff"/>
+    <rect x="35" y="125" width="170" height="52" rx="12" fill="#ff8fb3"/>
+    <rect x="35" y="108" width="170" height="28" rx="12" fill="#fff5f8"/>
+    <g font-size="16" text-anchor="middle"><text x="70" y="160">🍓</text><text x="120" y="160">💖</text><text x="170" y="160">🍓</text></g>
+    <g class="cd"><rect x="76" y="68" width="10" height="42" rx="3" fill="#8fd3ff"/><ellipse class="fl" cx="81" cy="58" rx="6" ry="10" fill="#ffb938"/><ellipse class="fl" cx="81" cy="61" rx="3" ry="6" fill="#fff3b0"/></g>
+    <g class="cd"><rect x="116" y="68" width="10" height="42" rx="3" fill="#ffb3d1"/><ellipse class="fl" cx="121" cy="58" rx="6" ry="10" fill="#ffb938"/><ellipse class="fl" cx="121" cy="61" rx="3" ry="6" fill="#fff3b0"/></g>
+    <g class="cd"><rect x="156" y="68" width="10" height="42" rx="3" fill="#b9f0c8"/><ellipse class="fl" cx="161" cy="58" rx="6" ry="10" fill="#ffb938"/><ellipse class="fl" cx="161" cy="61" rx="3" ry="6" fill="#fff3b0"/></g>
+  </svg>
+  <div style="display:flex;gap:10px;flex-wrap:wrap;justify-content:center"><button class="btn" id="blow">Tiup 💨</button><button class="btn alt" id="mic">Tiup pakai mic 🎤</button></div>
+  <p class="sub" id="cm" style="min-height:2.6em"></p>
+</section>
+
+<!-- Tahap 5 -->
+<section class="stage" id="s5">
+  <div id="fin"></div>
+  <h1 id="fh">Selamat ulang tahun! 🎂</h1>
+  <p class="big" id="ft"></p>
+  <button class="btn alt" id="again">Ulangi dari awal 🔁</button>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
